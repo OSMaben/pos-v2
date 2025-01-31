@@ -47,36 +47,7 @@ const TodaySalePurchaseCount = (props) => {
         <Row className="g-4">
             <Col className="col-12 mb-4">
                 <Row>
-                    <Widget
-                        title={getFormattedMessage("sales.title")}
-                        onClick={() => onClick("app/sales", "manage_sale")}
-                        allConfigData={allConfigData}
-                        className={`bg-primary ${
-                            config &&
-                            config.filter((item) => item === "manage_sale")
-                                .length !== 0
-                                ? "cursor-pointer"
-                                : ""
-                        }`}
-                        iconClass="bg-cyan-300"
-                        icon={
-                            <FontAwesomeIcon
-                                icon={faShoppingCart}
-                                className="fs-1-xl text-white"
-                            />
-                        }
-                        currency={
-                            frontSetting.value &&
-                            frontSetting.value.currency_symbol
-                        }
-                        value={
-                            allSalePurchase.all_sales_count
-                                ? parseFloat(
-                                      allSalePurchase.all_sales_count
-                                  ).toFixed(2)
-                                : "0.00"
-                        }
-                    />
+                
 
                     <Widget
                         title={getFormattedMessage("purchases.title")}
@@ -111,39 +82,7 @@ const TodaySalePurchaseCount = (props) => {
                         }
                     />
 
-                    <Widget
-                        title={getFormattedMessage("sales-return.title")}
-                        allConfigData={allConfigData}
-                        onClick={() =>
-                            onClick("app/sale-return", "manage_sale_return")
-                        }
-                        className={`bg-info ${
-                            config &&
-                            config.filter(
-                                (item) => item === "manage_sale_return"
-                            ).length !== 0
-                                ? "cursor-pointer"
-                                : ""
-                        }`}
-                        iconClass="bg-blue-300"
-                        icon={
-                            <FontAwesomeIcon
-                                icon={faArrowRight}
-                                className="fs-1-xl text-white"
-                            />
-                        }
-                        currency={
-                            frontSetting.value &&
-                            frontSetting.value.currency_symbol
-                        }
-                        value={
-                            allSalePurchase.all_sale_return_count
-                                ? parseFloat(
-                                      allSalePurchase.all_sale_return_count
-                                  ).toFixed(2)
-                                : "0.00"
-                        }
-                    />
+                    
 
                     <Widget
                         title={getFormattedMessage("purchases.return.title")}
@@ -182,57 +121,9 @@ const TodaySalePurchaseCount = (props) => {
                         }
                     />
 
-                    <Widget
-                        title={getFormattedMessage(
-                            "dashboard.widget.today-total-sales.label"
-                        )}
-                        allConfigData={allConfigData}
-                        onClick={() => onClick("app/sales", "manage_sale")}
-                        className="widget-bg-purple  cursor-pointer"
-                        iconClass="bg-purple-700"
-                        icon={
-                            <FontAwesomeIcon
-                                icon={faDollar}
-                                className="fs-1-xl text-white"
-                            />
-                        }
-                        currency={
-                            frontSetting.value &&
-                            frontSetting.value.currency_symbol
-                        }
-                        value={
-                            todayCount.today_sales
-                                ? parseFloat(todayCount.today_sales).toFixed(2)
-                                : "0.00"
-                        }
-                    />
+                   
 
-                    <Widget
-                        title={getFormattedMessage(
-                            "dashboard.widget.today-payment-received.label"
-                        )}
-                        allConfigData={allConfigData}
-                        onClick={() => onClick("app/sales", "manage_sale")}
-                        className="widget-bg-pink cursor-pointer"
-                        iconClass="bg-pink-700"
-                        icon={
-                            <FontAwesomeIcon
-                                icon={faMoneyBill}
-                                className="fs-1-xl text-white"
-                            />
-                        }
-                        currency={
-                            frontSetting.value &&
-                            frontSetting.value.currency_symbol
-                        }
-                        value={
-                            todayCount.today_sales_received_count
-                                ? parseFloat(
-                                      todayCount.today_sales_received_count
-                                  ).toFixed(2)
-                                : "0.00"
-                        }
-                    />
+                    
 
                     <Widget
                         title={getFormattedMessage(

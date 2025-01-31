@@ -324,12 +324,7 @@ const AsideMenu = (props) => {
                                             location.pathname ===
                                                 mainItems?.subPath
                                                     ?.purchaseReturnSubPath ||
-                                            location.pathname ===
-                                                mainItems?.subPath
-                                                    ?.salesSubPath ||
-                                            location.pathname ===
-                                                mainItems?.subPath
-                                                    ?.salesReturnSubPath ||
+                                            
                                             location.pathname ===
                                                 mainItems?.subPath
                                                     ?.expensesSubPath ||

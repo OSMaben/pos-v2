@@ -33,9 +33,9 @@ class SettingTableSeeder extends Seeder
         ]);
 
         Currency::create([
-            'name' => 'India',
-            'code' => 'INR',
-            'symbol' => '₹',
+            'name' => 'Maroc',
+            'code' => 'Mad',
+            'symbol' => 'dh',
         ]);
         $logoUrl = ('images/infycare-logo.png');
 

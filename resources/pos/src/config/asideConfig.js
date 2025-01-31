@@ -186,37 +186,7 @@ export default [
             },
         ],
     },
-    {
-        title: "sales.title",
-        name: "sales",
-        fontIcon: <FontAwesomeIcon icon={faCartShopping} />,
-        to: "/app/sales",
-        class: "d-flex",
-        is_submenu: "true",
-        permission: Permissions.MANAGE_SALE,
-        subPath: {
-            salesSubPath: "/app/sales",
-            salesReturnSubPath: "/app/sale-return",
-        },
-        subMenu: [
-            {
-                title: "sales.title",
-                name: "sales",
-                fontIcon: <FontAwesomeIcon icon={faCartShopping} />,
-                to: "/app/sales",
-                class: "d-flex",
-                permission: Permissions.MANAGE_SALE,
-            },
-            {
-                title: "sales-return.title",
-                name: "sales return",
-                fontIcon: <FontAwesomeIcon icon={faArrowRight} />,
-                to: "/app/sale-return",
-                class: "d-flex",
-                permission: Permissions.MANAGE_SALE_RETURN,
-            },
-        ],
-    },
+    
     {
         title: "transfers.title",
         name: "transfers",

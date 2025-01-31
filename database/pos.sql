@@ -408,7 +408,7 @@ CREATE TABLE `currencies` (
 --
 
 INSERT INTO `currencies` (`id`, `name`, `code`, `symbol`, `created_at`, `updated_at`) VALUES
-(1, 'India', 'INR', '₹', '2024-03-27 08:30:32', '2024-03-27 08:30:32');
+(1, 'India', 'INR', 'dh', '2024-03-27 08:30:32', '2024-03-27 08:30:32');
 
 -- --------------------------------------------------------
 
