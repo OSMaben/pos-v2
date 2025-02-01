@@ -74,7 +74,7 @@ const LineChart = (props) => {
             {
                 label: placeholderText("sales.title"),
                 data: weekSalePurchase ? weekSalePurchase.sales : '',
-                borderColor: '#6571FF',
+                borderColor: '#284f9c',
                 backgroundColor: '#A3AAFF',
             },
             {

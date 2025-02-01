@@ -219,7 +219,7 @@ const AsideMenu = (props) => {
                 <SidebarHeader className="aside-menu-container__aside-logo flex-column-auto pb-2 pt-3">
                     <a
                         href="/"
-                        className="text-decoration-none sidebar-logo text-gray-900 fs-4"
+                        classxName="text-decoration-none sidebar-logo text-gray-900 fs-4"
                     >
                         <div
                             className={`${
@@ -230,21 +230,14 @@ const AsideMenu = (props) => {
                         >
                             <img
                                 src={
-                                    frontSetting.value &&
-                                    frontSetting.value.logo
+                                    'http://localhost:8000/uploads/settings/4/Screenshot-2025-02-01-at-19.11.56.png'
                                 }
-                                className="img-fluid object-fit-contain"
+                                className="w-[100%] object-fit-contain"
                                 alt="profile image"
                             />
                         </div>
 
-                        {isMenuCollapse
-                            ? null
-                            : frontSetting.value &&
-                              frontSetting.value.show_app_name_in_sidebar ===
-                                  "1"
-                            ? frontSetting.value.company_name
-                            : ""}
+                        
                     </a>
                     <button
                         type="button"
